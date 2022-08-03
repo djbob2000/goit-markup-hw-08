@@ -1,0 +1,105 @@
+.portfolio {
+  &__card-content {
+    padding: 20px 24px;
+  }
+
+  &__card-title {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+    text-transform: none;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @extend %list;
+    margin-top: calc(-1 * var(--card-set-gap));
+    margin-left: calc(-1 * var(--card-set-gap));
+    text-align: left;
+  }
+
+  &__item {
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+
+    flex-basis: calc(100vw - 30px);
+
+    @media screen and (min-width: 480px) {
+      flex-basis: 480px - 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    background: var(--team-card-bg);
+    border: 1px solid #eeeeee;
+
+    transition-property: box-shadow;
+    transition-duration: var(--duration-of-transition);
+    transition-timing-function: var(--timing-func);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__card-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 294px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__card-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+    transition-property: transform;
+    transition-duration: var(--duration-of-transition);
+    transition-timing-function: var(--timing-func);
+  }
+
+  &__card-overlay-text {
+    margin-right: 24px;
+    margin-left: 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--hero-title-color);
+  }
+
+  &__link:hover .portfolio__card-overlay {
+    transform: translateY(-100%);
+  }
+
+  &__card-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-color);
+  }
+}
