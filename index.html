@@ -98,7 +98,7 @@
 
     <main>
       <section class="hero section">
-        <div class="hero__container">
+        <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button class="hero__button-order" type="button" data-modal-open>Заказать услугу</button>
         </div>
@@ -211,18 +211,21 @@
           <h2 class="team-section__title">Наша команда</h2>
           <ul class="team-section__list">
             <li class="team-section__team-card">
-              <img
-                srcset="
-                  ./images/team/igor-450.jpg    1x,
-                  ./images/team/igor-354.jpg    1x,
-                  ./images/team/igor-270.jpg    1x,
-                  ./images/team/igor-900@2x.jpg 2x,
-                  ./images/team/igor-708@2x.jpg 2x,
-                  ./images/team/igor-540@2x.jpg 2x
-                "
-                src="images/team/igor-450.jpg"
-                alt="Игорь Демьяненко"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/igor-270.jpg 1x, ./images/team/igor-270@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/igor-354.jpg 1x, ./images/team/igor-354@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="./images/team/igor-450.jpg 1x, ./images/team/igor-450@2x.jpg 2x"
+                />
+                <img class="portfolio__img" src="images/team/igor-450.jpg" alt="Игорь Демьяненко" />
+              </picture>
               <div class="team-section__team-thumb">
                 <h3 class="team-section__team-card-name">Игорь Демьяненко</h3>
                 <p class="team-section__team-card-text">Product Designer</p>
@@ -262,18 +265,21 @@
             </li>
 
             <li class="team-section__team-card">
-              <img
-                srcset="
-                  ./images/team/olga-450.jpg    1x,
-                  ./images/team/olga-354.jpg    1x,
-                  ./images/team/olga-270.jpg    1x,
-                  ./images/team/olga-900@2x.jpg 2x,
-                  ./images/team/olga-708@2x.jpg 2x,
-                  ./images/team/olga-540@2x.jpg 2x
-                "
-                src="images/team/olga-450.jpg"
-                alt="Ольга Репина"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/olga-270.jpg 1x, ./images/team/olga-270@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/olga-354.jpg 1x, ./images/team/olga-354@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="./images/team/olga-450.jpg 1x, ./images/team/olga-450@2x.jpg 2x"
+                />
+                <img class="portfolio__img" src="images/team/olga-450.jpg" alt="Ольга Репина" />
+              </picture>
               <div class="team-section__team-thumb">
                 <h3 class="team-section__team-card-name">Ольга Репина</h3>
                 <p class="team-section__team-card-text">Frontend Developer</p>
@@ -311,18 +317,25 @@
               </div>
             </li>
             <li class="team-section__team-card">
-              <img
-                srcset="
-                  ./images/team/nikola-450.jpg    1x,
-                  ./images/team/nikola-354.jpg    1x,
-                  ./images/team/nikola-270.jpg    1x,
-                  ./images/team/nikola-900@2x.jpg 2x,
-                  ./images/team/nikola-708@2x.jpg 2x,
-                  ./images/team/nikola-540@2x.jpg 2x
-                "
-                src="images/team/nikola-450.jpg"
-                alt="Николай Тарасов"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/nikola-270.jpg 1x, ./images/team/nikola-270@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/nikola-354.jpg 1x, ./images/team/nikola-354@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="./images/team/nikola-450.jpg 1x, ./images/team/nikola-450@2x.jpg 2x"
+                />
+                <img
+                  class="portfolio__img"
+                  src="images/team/nikola-450.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="team-section__team-thumb">
                 <h3 class="team-section__team-card-name">Николай Тарасов</h3>
                 <p class="team-section__team-card-text">Marketing</p>
@@ -360,18 +373,21 @@
               </div>
             </li>
             <li class="team-section__team-card">
-              <img
-                srcset="
-                  ./images/team/mixail-450.jpg    1x,
-                  ./images/team/mixail-354.jpg    1x,
-                  ./images/team/mixail-270.jpg    1x,
-                  ./images/team/mixail-900@2x.jpg 2x,
-                  ./images/team/mixail-708@2x.jpg 2x,
-                  ./images/team/mixail-540@2x.jpg 2x
-                "
-                src="images/team/mixail-450.jpg"
-                alt="Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  media="(min-width:1200px)"
+                  srcset="./images/team/mihail-270.jpg 1x, ./images/team/mihail-270@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="./images/team/mihail-354.jpg 1x, ./images/team/mihail-354@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width:300px)"
+                  srcset="./images/team/mihail-450.jpg 1x, ./images/team/mihail-450@2x.jpg 2x"
+                />
+                <img class="portfolio__img" src="images/team/mihail-450.jpg" alt="Михаил Ермаков" />
+              </picture>
               <div class="team-section__team-thumb">
                 <h3 class="team-section__team-card-name">Михаил Ермаков</h3>
                 <p class="team-section__team-card-text">UI Designer</p>

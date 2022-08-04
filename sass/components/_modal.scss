@@ -18,7 +18,11 @@
 
   @media screen and (max-width: 767px) {
     max-width: 450px;
-    width: calc(100% - 2 * 40px);
+    width: calc(100% - 2 * 10vw);
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 8vw;
   }
 
   @media screen and (min-width: 1199px) {
@@ -30,6 +34,9 @@
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
   }
 
   &__button {

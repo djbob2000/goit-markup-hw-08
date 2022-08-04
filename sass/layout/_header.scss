@@ -259,6 +259,9 @@
       font-size: 34px;
       line-height: 1.176;
     }
+    @media screen and (max-width: 480px) {
+      font-size: 26px;
+    }
   }
 
   &-contacts__link:hover,
@@ -283,6 +286,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0 0 0 -10px;
+    row-gap: 10px;
   }
   &__item {
     margin-bottom: 0;
